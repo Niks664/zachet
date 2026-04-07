@@ -1,2 +1,4 @@
-print
-print('hello world')
+def Timer(seconds):
+    for i in seconds:
+        print(seconds)
+        
