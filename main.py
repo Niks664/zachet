@@ -10,8 +10,13 @@ def timer(hours, minutes, seconds):
         
         print(f"Осталось: {h:02d}:{m:02d}:{s:02d}", end="\r")
         
+        time.sleep(1) 
         total_seconds -= 1
         
     print("Время вышло!        ")
 
-timer(1, 30, 10)
+hours = int(input("Введите часы, если нет, то 0:"))
+minutes = int(input("Введите минуты, если нет, то 0:"))
+seconds = int(input("Введите секунды, если нет, то 0:"))
+
+timer(hours, minutes, seconds)
